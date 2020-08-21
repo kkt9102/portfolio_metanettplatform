@@ -1,0 +1,1248 @@
+/* 폰트적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+label[for] {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* 라이브러리 */
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.absolute-left {
+  position: absolute;
+  left: 0;
+}
+
+.absolute-right {
+  position: absolute;
+  right: 0;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.absolute-top {
+  position: absolute;
+  top: 0;
+}
+
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute-middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.absolute-middle.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.cell {
+  float: left;
+  box-sizing: border-box;
+}
+
+.cell-right {
+  float: right;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.img-box>img {
+  width: 100%;
+  display: block;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-0-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.line-height-0 {
+  line-height: 0;
+}
+
+.line-height-0>* {
+  line-height: normal;
+}
+
+.width-30px {
+  width: 30px;
+}
+
+.width-35px {
+  width: 35px;
+}
+
+.width-40px {
+  width: 35px;
+}
+
+.width-45px {
+  width: 35px;
+}
+
+.width-50px {
+  width: 50px;
+}
+
+.width-80px {
+  width: 80px;
+}
+
+.width-100px {
+  width: 100px;
+}
+
+.width-100p {
+  width: 100%;
+}
+
+.width-60p {
+  width: 60%;
+}
+
+.width-55p {
+  width: 55%;
+}
+
+.width-50p {
+  width: 50%;
+}
+
+.width-45p {
+  width: 45%;
+}
+
+.width-40p {
+  width: 40%;
+}
+
+.width-30p {
+  width: 30%;
+}
+
+.width-35p {
+  width: 35%;
+}
+
+.width-100p-except-30px {
+  width: calc(100% - 30px);
+}
+
+.width-100p-except-35px {
+  width: calc(100% - 35px);
+}
+
+.width-100p-except-40px {
+  width: calc(100% - 40px);
+}
+
+.width-100p-except-50px {
+  width: calc(100% - 50px);
+}
+
+.width-100p-except-80px {
+  width: calc(100% - 80px);
+}
+
+.width-100p-except-100px {
+  width: calc(100% - 100px);
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.font-size-dot-8rem {
+  font-size: 0.8rem;
+}
+
+.flex-direction-c {
+  flex-direction: column;
+}
+
+.table-row {
+  display: table;
+}
+
+.table-row.row::after {
+  display: inline;
+  clear: non;
+}
+
+.table-row>.cell {
+  float: none;
+  display: table-cell;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex>.cell {
+  float: none;
+}
+
+.ch-flex-1-0-auto>* {
+  flex: 1 0 auto;
+}
+
+.justify-content-fe {
+  justify-content: flex-end;
+}
+
+.justify-content-fs {
+  justify-content: flex-start;
+}
+
+.justify-content-sa {
+  justify-content: space-around;
+}
+
+.justify-content-sb {
+  justify-content: space-between;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.flex-wrap-no {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-wrapre {
+  flex-wrap: wrap-reverse;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-g-1 {
+  flex-grow: 2;
+}
+
+*>.flex-1-0-0 {
+  flex: 1 0 0;
+}
+
+*>.flex-ai-c {
+  display: flex;
+  align-items: center;
+}
+
+*>.flex-jc-c {
+  display: flex;
+  justify-content: center;
+}
+
+/* 커스텀 */
+.con-min-width {
+  min-width: 1356px;
+}
+
+.con {
+  max-width: 1920px;
+}
+
+.con-1 {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.con-2 {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* 페이지 접속 커스텀 */
+.main-image {
+  transform: scale(1.1);
+  transition: transform 1.5s;
+  top: 0;
+  position: absolute;
+  color: #fff;
+}
+
+.main-image {
+  background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/metanettplatform/main-visual-1.jpg);
+  background-position: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+}
+
+/* 상단메뉴 커스텀 */
+
+.top-bar {
+  z-index: 4;
+  transition: background-color 0.5s, color 0.5s;
+  border-bottom: 1px solid rgba(182, 182, 182, 0.3);
+  color: #fff;
+  height: 100px;
+  width: 100%;
+}
+
+.top-bar:hover,
+.top-bar.no-bar {
+
+  background-color: #fff;
+  color: #000;
+}
+
+.top-bar.no-bar {
+  box-shadow: 0 1px 10px 0 rgba(182, 182, 182, 0.3);
+}
+
+/*
+.top-bar.active {
+  color: #000;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+*/
+
+.top-bar.active>.left-menu-box>.logo>a>img:last-child {
+  opacity: 1;
+}
+
+.top-bar.active>.right-menu-box>.btn-menu>div {
+  background-color: #000;
+}
+
+.top-bar.active>.right-menu-box>.lang>ul,
+.top-bar.active>.left-menu-box>.menu-box-1 {
+  visibility: hidden;
+}
+
+/* logo 커스텀 */
+.logo>a>img {
+  position: absolute;
+  transform: translatey(-20%);
+  transition: opacity 0.5s;
+}
+
+.logo>a>img:last-child {
+  opacity: 0;
+}
+
+.logo>a>img:first-child {
+  opacity: 1;
+}
+
+/* top-bar hover 효과모음 */
+.top-bar:hover>.left-menu-box>.logo>a>img:last-child,
+.top-bar.no-bar>.left-menu-box>.logo>a>img:last-child {
+  opacity: 1;
+}
+
+.top-bar:hover>.left-menu-box>.logo>a>img:first-child,
+.top-bar.no-bar>.left-menu-box>.logo>a>img:first-child {
+  opacity: 0;
+}
+
+.top-bar>.right-menu-box>.lang>ul>.active>a {
+  transition: border-bottom 0.5s, color 0.5s;
+}
+
+.top-bar:hover>.right-menu-box>.lang>ul>.active>a,
+.top-bar.no-bar>.right-menu-box>.lang>ul>.active>a {
+  border-bottom: 3px solid #000;
+  color: #000;
+}
+
+.top-bar>.right-menu-box>.btn-menu>div {
+  transition: background-color .5s;
+}
+
+.top-bar:hover>.right-menu-box>.btn-menu>div,
+.top-bar.no-bar>.right-menu-box>.btn-menu>div {
+  background-color: #000;
+}
+
+.left-menu-box {
+  flex-grow: 9;
+  font-size: 17px;
+}
+
+.right-menu-box {
+  flex-grow: 2;
+  font-size: 14px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.menu-box-1 {
+  flex-grow: 4;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.menu-box-1>ul>li>a {
+  padding: 36px 10px;
+  margin: 0 25px;
+}
+
+.menu-box-1>ul>li {
+  width: 100%;
+}
+
+.menu-box-1>ul>li>a {
+  height: 100%;
+}
+
+.menu-box-1>ul>li:hover>a::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top: 20%;
+  position: absolute;
+  background-color: #ffcf00;
+}
+
+.lang>ul>li>a {
+  margin: 0 10px 0 10px;
+  color: #ccc;
+}
+
+.lang>ul>.active>a {
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+
+/* btn-menu 커스텀 */
+.right-menu-box>.btn-menu {
+  width: 80px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.right-menu-box>.btn-menu>div {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  left: 25%;
+  background-color: #fff;
+}
+
+.right-menu-box>.btn-menu>div:first-child {
+  top: 38%;
+  transform: rotate(0deg);
+  transition: top 0.3s 0.3s, transform 0.3s;
+}
+
+.right-menu-box>.btn-menu>div:nth-child(2) {
+  top: 48%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.right-menu-box>.btn-menu>div:last-child {
+  top: 58%;
+  transform: rotate(0deg);
+  transition: top 0.3s 0.3s, transform 0.3s;
+}
+
+/* btn-menu 활성화 커스텀 */
+.right-menu-box>.btn-menu.active>div:first-child {
+  top: 48%;
+  transform: rotate(45deg);
+  transition: top 0.3s, transform 0.3s 0.3s;
+}
+
+.right-menu-box>.btn-menu.active>div:nth-child(2) {
+  top: 48%;
+  opacity: 0;
+  transition: opacity 0.3s 0s;
+}
+
+.right-menu-box>.btn-menu.active>div:last-child {
+  top: 48%;
+  transform: rotate(-45deg);
+  transition: top 0.3s, transform 0.3s 0.3s;
+}
+
+.menu-box-1>ul>li>div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 101px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: background-color 0.5s, visibility .5s, height 0.3s;
+
+}
+
+.menu-box-1>ul>li>div>ul {
+  margin: 0 30px 50px 30px;
+
+
+}
+
+.top-bar .menu-box-1>ul>li>div::before {
+  content: "";
+  background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/metanettplatform/nav-bg.png);
+  width: 320px;
+  height: 168px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 200px);
+}
+
+.top-bar .menu-box-1>ul>li.selected>div {
+  z-index: 1;
+  color: #000;
+}
+
+.menu-box-1>ul>li>div>ul>li {
+  padding: 10px 0;
+}
+
+.menu-box-1>ul>li:nth-child(1n+4)>div>ul>li {
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+.menu-box-1>ul>li:hover>div {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.menu-box-1>ul>li>div>ul>li:hover>a {
+  color: #014099;
+
+}
+
+/* btn-menu-box 커스텀 */
+html.active {
+  overflow-Y: hidden;
+}
+
+.top-page {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.btn-menu-box {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  top: 100px;
+  right: -100%;
+  position: absolute;
+  z-index: 3;
+  transition: right 0.6s;
+
+}
+
+.btn-menu-box.active {
+  right: 0;
+}
+
+.btn-menu-box>section>div {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.btn-menu-box>section>div>ul {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+.btn-menu-box>section>div>ul li {
+  font-size: 16px;
+  font-weight: 300;
+  color: #aaa;
+  margin: 15px 0;
+}
+
+.btn-menu-box>section>div:nth-child(1n + 4)>ul li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.btn-menu-box>section>div>ul li:hover {
+  color: #014099;
+}
+
+/* 메인페이지 text 커스텀 */
+.main-text-1,
+.main-text-2,
+.main-link {
+  position: absolute;
+  top: 32%;
+  left: 17%;
+  color: #fff;
+}
+
+.main-text-1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.main-text-2 {
+  top: 38%;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.main-link {
+  top: 62%;
+  transition: left 0.5s;
+}
+
+.main-link>a>.fas {
+  font-size: 12px;
+  margin-left: 20px;
+  padding: 20px 23px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+}
+
+.main-link:hover {
+  left: 15.5%;
+}
+
+.a2 {
+  height: 100px;
+}
+
+/*
+.menu-box-1>ul>li>div {
+  width: 100%;
+  top: 100px;
+  left: 0;
+  height: 0;
+  position: absolute;
+  background-color: #fff;
+  transition: height .5s;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.menu-box-1>ul>li>div h3 {
+  padding-top: 30px;
+  margin-left: 15px;
+}
+
+.menu-box-1>ul>li>div>ul {
+  margin: 0 50px;
+
+}
+
+.menu-box-1>ul>li>div>ul>li {
+  font-size: 16px;
+  font-weight: 300;
+  color: #aaa;
+  margin: 15px 15px;
+}
+
+.menu-box-1>ul>li:nth-child(1n + 4)>div>ul>li {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.menu-box-1>ul>li>div>ul>li:hover {
+  color: #014099;
+}
+
+.menu-box-1>ul>li:hover>.hybrid {
+  height: 400px;
+}
+
+.menu-box-1>ul>li:hover>.platform {
+  height: 300px;
+}
+
+.menu-box-1>ul>li:hover>.solution {
+  height: 400px;
+}
+
+.menu-box-1>ul>li:hover>.resource {
+  height: 150px;
+}
+
+.menu-box-1>ul>li:hover>.aboutus {
+  height: 150px;
+}
+*/
+.menu-box-1>ul>li>div>div {
+  background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/metanettplatform/nav-bg.png);
+  background-position: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 320px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.notice-slider-box {
+  position: absolute;
+  bottom: 0%;
+  width: 83%;
+  right: 0;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.notice-slider-box>.slider {
+  margin-left:0px;
+  height: 66px;  
+  color: #fff;
+}
+.notice-slider-box>.slider>.header{
+  font-size:16px;
+  font-weight: 900;
+  margin: 22px;
+}
+.notice-slider-box>.slider>.slider-ul {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.slider-ul > .slick-arrow {
+  position: absolute;
+  right:0%;
+  z-index: 1;
+  opacity: .7;
+  cursor: pointer;
+}
+.slider-ul > .slick-arrow:hover {
+  opacity: 1;
+}
+.slider-ul > .slick-arrow:first-child {
+  top:0;
+}
+.slider-ul > .slick-arrow:last-child {
+  transform: translateY(-70%);
+}
+/* page 공동  커스텀 */
+.text-box {
+  padding: 130px 0 50px 0;
+}
+
+.page-text-1 {
+  color: #eebd07;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 400;
+
+}
+
+.page-text-2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.scroll-box {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 130px;
+}
+
+/* page-2 커스텀 */
+.page-2 {
+  background: #f5f5f5;
+}
+
+.scroll-box>.scroll-box-item:first-child {
+  margin-top: 80px;
+  opacity: 0;
+  transition: margin-top .3s, opacity .3s;
+}
+
+.scroll-box.scroll>.scroll-box-item:first-child {
+  margin-top: 0;
+  opacity: 1;
+  transition: margin-top .3s, opacity .3s;
+}
+
+.scroll-box>.scroll-box-item:nth-child(2) {
+  margin-top: 80px;
+  opacity: 0;
+  transition: margin-top .3s, opacity .3s;
+}
+
+.scroll-box.scroll>.scroll-box-item:nth-child(2) {
+  margin-top: 0;
+  opacity: 1;
+  transition: margin-top .6s .3s, opacity .9s .3s;
+}
+
+.scroll-box>.scroll-box-item:last-child {
+  margin-top: 80px;
+  opacity: 0;
+  transition: margin-top .3s, opacity .3s;
+}
+
+.scroll-box.scroll>.scroll-box-item:last-child {
+  margin-top: 0;
+  opacity: 1;
+  transition: margin-top 1.2s .3s, opacity 1.5s .3s;
+}
+
+
+
+.scroll-box>.scroll-box-item {
+  background: #fff;
+  color: #333;
+  margin: 0 13px;
+  padding: 40px 40px;
+  transition: background-color .3s;
+}
+
+.scroll-box>li h4 {
+  font-size: 1.5rem;
+}
+
+.scroll-box>li p {
+  color: #666;
+  font-size: 15px;
+}
+
+.scroll-box>.scroll-box-item:hover {
+  background-color: #ffcd07;
+}
+
+.slider-btn>div {
+  bottom: 100%;
+  position: absolute;
+  right: 103%;
+  cursor: pointer;
+}
+
+.slider-btn>div:last-child {
+  left: 103%;
+
+}
+
+/* page-3 커스텀 */
+/* 슬릭슬라이더용 */
+.slider-div {
+  height: 460px;
+}
+
+.slider-div>.item {
+  width: 100%;
+  height: 460px;
+}
+
+.slider-div>.item ul {
+  margin-left: 2px;
+  position: absolute;
+  width: 100%;
+  height: 460px;
+}
+
+.slider-div ul>li {
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.slider-div ul>li:not(:nth-child(4n+1)) {
+  margin-left: 29px;
+}
+
+.slider-div ul>li {
+  margin-bottom: 29px;
+}
+
+.slider-div ul>li>a {
+  border: 1px solid #ccc;
+}
+
+.slider-div ul>li>a>img {
+  width: calc(1180px/4);
+  box-sizing: border-box;
+}
+
+
+.page-3 .slick-arrow {
+  position: absolute;
+  bottom: 50%;
+  transform: translatey(50%);
+}
+
+.page-3 .slick-arrow:first-child {
+  left: -10%;
+}
+
+.page-3 .slick-arrow:last-child {
+  right: -10%;
+}
+
+.page-3>.slider-box {
+  opacity: 0;
+  margin-top: 50px;
+  transition: margin-top .3s, opacity .3s;
+}
+
+.page-3.scroll>.slider-box {
+  margin-top: 0;
+  opacity: 1;
+  transition: margin-top .3s .3s, opacity .3s .3s;
+}
+
+/*
+기존작업물
+.page-3 > .slider-box {
+  background-color: #fff;
+  height:480px;
+  overflow:hidden;
+  opacity: 0;
+  margin-top: 50px;
+  transition: margin-top .3s, opacity .3s;
+}
+.page-3.scroll > .slider-btn {
+  margin-top: 0;
+  opacity: 1;
+  transition: margin-top .3s .3s, opacity .3s .3s;
+} 
+.page-3.scroll > .slider-box {
+  opacity: 1;
+  margin-top: 0;
+  transition: margin-top .3s .3s, opacity .3s .3s;
+}
+.slider-box > .slider > .item-box {
+  position:relative;
+  opacity:0;
+  transition: opacity .5s;    
+}
+.slider-box > .slider > .item-box.active {
+  opacity:1;
+
+} 
+.slider-box > .slider > .item-box > ul {
+  position:absolute;
+  background-color: #fff;
+}
+
+.slider-box > .slider > .item-box > ul > li:not(:nth-child(4n+4)) > a {
+  margin-right:17px;
+  
+}
+.slider-box > .slider > .item-box > ul > li > a {
+  margin:13px 0;
+  display:block;
+}
+.slider-box > .slider > .item-box > ul > li > a > img {
+  border:1px solid #ccc;
+}
+.page-3 > .slider-btn {
+  position: absolute;
+  top:75%;
+  width: 100%;
+  margin-top: 50px;
+  opacity: 0;
+  transition: margin-top .3s, opacity .3s;
+}
+.page-3 > .slider-btn > div {
+  position: absolute;
+}
+.page-3 > .slider-btn > div:last-child {
+  right:10%;
+  left:auto;
+}
+.page-3 > .slider-btn > div:first-child {
+  left:10%;
+}
+/*
+/* page-4 커스텀 */
+.page-4 {
+  background: #f5f5f5;
+}
+
+.page-4>.scroll-box {
+  margin-top: 50px;
+  opacity: 0;
+  transition: margin-top .3s, opacity .3s;
+}
+
+.page-4.scroll>.scroll-box {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.page-4>.scroll-box>ul>li {
+  width: 400px;
+  background-color: #fff;
+}
+
+.page-4>.scroll-box>ul>li>a>.img-box {
+  height: 280px;
+  overflow: hidden;
+}
+
+.page-4>.scroll-box>ul>li>a .image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  width: 100%;
+  transition: transform .5s;
+}
+
+.page-4>.scroll-box>ul>li:hover>a .image {
+  transform: scale(1.1);
+}
+
+.page-4>.scroll-box>ul>li:hover>a .title-name {
+  text-decoration: underline;
+}
+
+.page-4>.scroll-box>ul>li>a>.page-4-text-box {
+  text-align: left;
+  margin: 30px 25px;
+}
+
+.cate-name {
+  color: #ffbd07;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.title-name {
+  font-weight: 400;
+  font-size: 25px;
+  height: 3em;
+}
+
+.page-4>.scroll-box>ul>li>a>.page-4-text-box>p {
+  font-size: 15px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  height: 44px;
+
+}
+
+/* bottom-page 커스텀 */
+.bottom-banner {
+  background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/metanettplatform/main-bn-bg.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 320px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.bottom-banner>* {
+  text-align: center;
+
+}
+
+.bottom-banner>div:first-child {
+  padding: 100px 0 40px 0;
+}
+
+.contact-link>a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  background: #ffbd07;
+  border-radius: 25px;
+  padding: 14px 70px;
+  transition: background .4s, color .4s;
+}
+
+.contact-link:hover>a {
+  background: #000;
+  color: #fff;
+}
+
+.bottom-site-map {
+  background-color: #222;
+}
+
+.site-map {
+  color: #fff;
+  font-size: 14px;
+  border-bottom: .9px solid #aaa;
+}
+
+.site-map>ul>li {
+  margin: 30px 20px 20px 0;
+}
+
+.site-map>ul>li:not(:first-child),
+.bottom-text {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.bottom-text>div:not(:nth-child(2)) {
+  margin-top: 20px;
+}
+
+.bottom-text>div:last-child {
+  padding-bottom: 60px;
+}
+
+.family-site {
+  position: absolute;
+  right: 0;
+  color: #bbb;
+  font-size: 14px;
+  font-weight: 300;
+  width: 18%;
+  top: 20px
+}
+
+.family-site>li {
+  border: 1px solid #bbb;
+  padding: 20px 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.family-site>li>ul {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  bottom: 100%;
+  overflow: hidden;
+  transition: height .5s;
+}
+
+.family-site>li.active>ul {
+  height: 370px;
+}
+
+.family-site>li>ul>li>a {
+  padding: 8px 18px;
+  color: #666;
+}
+
+/* hover-btm 커스텀 */
+.hover-btn {
+  right: 1%;
+  bottom: 1%;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.hover-btn.no-bar {
+  opacity: 1;
+}
+
+/* 스크롤이동 효과 커스텀 */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+
+/* 미디어쿼리 */
+
+@media (max-width:1240px) {
+  .menu-box-1{
+    visibility: hidden;
+  }
+  .left-menu-box {
+    flex-grow:5;
+  }
+}

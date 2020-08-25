@@ -20,6 +20,15 @@
 </head>
 
 <body>
+  <!-- 모작페이지 알람 -->
+  <div class="alerted active">
+    <div class="alert-box inline-block">이 페이지는 포트폴리오를 위한 페이지 입니다.
+      <div class="close-btn text-align-center">
+        <div class="close-text inline-block">확인</div>
+      </div>
+    </div>
+  </div>
+  <!-- 모작페이지 알람 끝 -->
   <!-- hover-btn HTML -->
   <div class="hover-btn fixed nav-down">
     <div class="talk"><a href="#" class="block"><img

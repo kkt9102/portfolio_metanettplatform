@@ -226,6 +226,12 @@ function nonHoverMenu(){
 }
 */
 
+function alerted(){
+	$('.alerted > .alert-box > .close-btn > .close-text').click(function(){
+		$('.alerted').removeClass('active');
+	})
+}
+
 $(function () {
   main_enter();
   btn__menu();
@@ -234,4 +240,5 @@ $(function () {
   slick();
   main_scroll();
   menuBoxHover();
+  alerted();
 })
